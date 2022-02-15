@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Booking Engine</title>
+</head>
+<body>
+    <h1>Booking Engine</h1>
+    <p>Please select the date range and the max price to display all available accomodations</p>
+    <form action = "display" method = "get">
+    <label for="start">Start Date: </label><br>
+    <input type="date" id="start" name="start_date" value="{{placement.date|date:'Y-m-d' }}"></input><br><br>
+    <label for="end">End Date: </label><br>
+    <input type="date" id="end" name="end_date" value="{{placement.date|date:'Y-m-d' }}"></input><br><br>
+    <label for="max_price">Maximum price: </label><br>
+    <input type="text" id="max_price" name="max_price"></input><br><br>
+    <input type="submit" value="OK">
+    </form>
+</body>
+</html>

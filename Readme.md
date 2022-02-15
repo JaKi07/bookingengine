@@ -21,7 +21,7 @@ Extend Django Project with Django REST Framework for a simple prebuild booking a
 2. We should be able to **block days** ( make reservations ) for each **Apartment** or **HotelRoom**.
     - **new** Model for blocked (reserved) days must be created
 
-    **A new model for blocking days (reservation) is created. The BlockedDays model is provided in the models.py file. Includes relevant fields that are necessary for blocking days. A single 'day' field is considered for blocking for simplicity.**
+    **A new model for blocking days (reservation) is created. The BlockedDays model is provided in the `models.py` file. Includes relevant fields that are necessary for blocking days. A single `day` field is considered for blocking for simplicity.**
 
 3. NEW **endpoint** where we will get available Apartments and Hotels based on:
 	- **available days** (date range ex.: "from 2021-12-09 to 2021-12-12")
@@ -42,18 +42,18 @@ Extend Django Project with Django REST Framework for a simple prebuild booking a
 
 ## Techincal Implementation Details
 
-**1. A new model for blocking days is created in the models.py file**
+**1. A new model for blocking days is created in the `models.py` file**
 
-**2. A template (simple HTML) to receive inputs from the user - start date, end date and maximum price is created.**
+**2. A template (simple HTML) to receive inputs from the user - `start date`, `end date` and `maximum price` is created.**
 
-**3. The paths/routes are updated in the urls.py file and linked to the Django methods in views.py file**
-**4. views.py file holds the logic for displaying data and computing available accomodations according to the user inputs and the specification provided in the README file.**
+**3. The paths/routes are updated in the `urls.py` file and linked to the Django methods in `views.py` file**
+**4. `views.py` file holds the logic for displaying data and computing available accomodations according to the user inputs and the specification provided in the README file.**
     
-    - It consists of two methods: 'display_home' to take the input from the user, 'display_data' to calculate and output the JSON response according to the inputs from the user and the specifications provided.
+    - It consists of two methods: `display_home` to take the input from the user, `display_data` to calculate and output the JSON response according to the inputs from the user and the specifications provided.
 
 **5. Database file is updated and necessary migrations are also performed to test the specification.**
 
-**6. Necessary updations are done in settings.py file (it also includes a debug toolbar :)**
+**6. Necessary updations are done in `settings.py` file (it also includes a debug toolbar :)**
 
 ## Request example:
 
